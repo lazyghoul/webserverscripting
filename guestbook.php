@@ -20,7 +20,7 @@
 								<a href="#" class="icon fa-angle-down">Criteria</a>
 								<ul>
                                     <li><a href="upload.html">Upload File</a></li>
-                                    <li><a href="#">Option Two</a></li>
+                                    <li><a href="guestbook.html">Guestbook</a></li>
                                     <li><a href="#">Option Three</a></li>
                                     <li><a href="#">Option Four</a></li>
                                     <!---Removed, used for other pages
