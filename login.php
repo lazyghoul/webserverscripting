@@ -13,7 +13,6 @@
 			<!-- Header -->
 				<header id="header" class="alt">
 					<h1><a href="index.html">Web Scripting</a> by Josh Simpson</h1>
-					<h1><a href="index.html">Web Scripting</a> by Josh Simpson</h1>
 					<nav id="nav">
 						<ul>
 							<li><a href="index.html">Home</a></li>
@@ -27,6 +26,7 @@
 									<li><a href="contact.html">Contact</a></li>
 									<li><a href="elements.html">Elements</a></li>
                                     -------------------------------------------->
+								</ul>
 							</li>
 							<li><a href="login.php" class="button">Sign In</a></li>
 						</ul>

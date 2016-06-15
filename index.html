@@ -32,6 +32,7 @@
 									<li><a href="contact.html">Contact</a></li>
 									<li><a href="elements.html">Elements</a></li>
                                     -------------------------------------------->
+								</ul>
 							</li>
 							<li><a href="login.php" class="button">Sign In</a></li>
 						</ul>

@@ -20,29 +20,15 @@
 								<a href="#" class="icon fa-angle-down">Criteria</a>
 								<ul>
                                     <li><a href="upload.html">Upload File</a></li>
-                                    <li><a href="#">Option Two</a></li>
-                                    <li><a href="#">Option Three</a></li>
-                                    <li><a href="#">Option Four</a></li>
+                                    <li><a href="guestbook.html">Guestbook</a></li>
                                     <!---Removed, used for other pages
 									<li><a href="generic.html">Generic</a></li>
 									<li><a href="contact.html">Contact</a></li>
 									<li><a href="elements.html">Elements</a></li>
                                     -------------------------------------------->
-                                    
-                                    <!---------- Removed, could be used if needed
-									<li>
-										<a href="#">Submenu</a>
-										<ul>
-											<li><a href="#">Option One</a></li>
-											<li><a href="#">Option Two</a></li>
-											<li><a href="#">Option Three</a></li>
-											<li><a href="#">Option Four</a></li>
-										</ul> 
-									</li>
-                                    --------------------------------------------->
 								</ul>
 							</li>
-							<li><a href="login.html" class="button">Sign In</a></li>
+							<li><a href="login.php" class="button">Sign In</a></li>
 						</ul>
 					</nav>
 				</header>
