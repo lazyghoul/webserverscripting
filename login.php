@@ -65,21 +65,28 @@
                           }
 
                           session_start();
-                          if($user!=""&&$pass!="")
+                          $_SESSION['login'] = "";
+                          if($user != "" && $pass != "")
                           {
-                            if($user=="username"&&$pass=="password") $validated = true;
-                            if($validated)
-                            {
-                              $_SESSION['login'] = "OK";
-                              $_SESSION['username'] = $user;
-                              $_SESSION['password'] = $pass;
-                              header('Location: protected.php');
-                            }
-                            else
-                            {
-                              $_SESSION['login'] = "";
-                              echo "Invalid username or password.";
-                            }
+                          	$conn = @mysql_connect ("mysql.hostinger.co.uk", "u638900915_admin", "projectmayhem")
+                          		or die ("Sorry - unable to connect to MySQL Database.");
+                          	$rs = @mysql_select_db ("u638900915_admin", $conn) or die ("error");
+                          	$sql = "SELECT * FROM user WHERE username = '$user' AND password = '$pass'";
+                          	$rs = mysql_query($sql,$conn);
+                          	$result = mysql_num_rows($rs);
+                          	
+                          	if ($result > 0) $validated = true;
+                          	if($validated)
+                          	{
+                          		$_SESSION['login'] = "OK";
+                          		$_SESSION['username'] = $user;
+                          		$_SESSION['password'] = $pass;
+                          		header('Location: protected.php');
+                          	}
+                          	else {
+                          		$_SESSION['login'] = "";
+                          		echo "Invalid username or password.";
+                          	}
                           }
                           else $_SESSION['login'] = "";
                         ?>

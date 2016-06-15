@@ -51,7 +51,7 @@
                                     --------------------------------------------->
 								</ul>
 							</li>
-							<li><a href="#" class="button">Sign In</a></li>
+							<!--<li><a href="#" class="button">Sign In</a></li>-->
 						</ul>
 					</nav>
 				</header>
@@ -59,7 +59,7 @@
 			<!-- Main -->
 				<section id="main" class="container 75%">
 					<header>
-						<h2>Login Page</h2>
+						<h2>Protected Page</h2>
 					</header>
 					<div class="box">
                         <?php
@@ -69,7 +69,12 @@
                             echo "<br/>";
                             echo "Your password is: ";
                             echo $_SESSION['password'];
-                            echo "</p>"
+                            echo "</p>";
+                            
+                            if($_SESSION['username'] == 'admin')
+                            {
+                            	echo "<p><a href='create_user.php'>Create new user.</a></p>";
+                            }
                           ?>
                         
                         
