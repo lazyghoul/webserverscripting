@@ -62,7 +62,8 @@
                             
                             if($_SESSION['username'] == 'admin')
                             {
-                            	echo "<p>Logged into Admin account</p>";
+                            	echo "<p>Logged into the Admin account, here is a kitten.</p>";
+                            	echo "<span class='image featured'><img src='images/kitten-sombrero.jpg' alt='' /></span>";
                             	echo "<p><a href='create_user.php'>Create new user.</a></p>";
                             }
                           ?>
