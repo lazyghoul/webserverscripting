@@ -13,6 +13,7 @@
 			<!-- Header -->
 				<header id="header" class="alt">
 					<h1><a href="index.html">Web Scripting</a> by Josh Simpson</h1>
+					<h1><a href="index.html">Web Scripting</a> by Josh Simpson</h1>
 					<nav id="nav">
 						<ul>
 							<li><a href="index.html">Home</a></li>
@@ -20,29 +21,14 @@
 								<a href="#" class="icon fa-angle-down">Criteria</a>
 								<ul>
                                     <li><a href="upload.html">Upload File</a></li>
-                                    <li><a href="#">Option Two</a></li>
-                                    <li><a href="#">Option Three</a></li>
-                                    <li><a href="#">Option Four</a></li>
+                                    <li><a href="guestbook.html">Guestbook</a></li>
                                     <!---Removed, used for other pages
 									<li><a href="generic.html">Generic</a></li>
 									<li><a href="contact.html">Contact</a></li>
 									<li><a href="elements.html">Elements</a></li>
                                     -------------------------------------------->
-                                    
-                                    <!---------- Removed, could be used if needed
-									<li>
-										<a href="#">Submenu</a>
-										<ul>
-											<li><a href="#">Option One</a></li>
-											<li><a href="#">Option Two</a></li>
-											<li><a href="#">Option Three</a></li>
-											<li><a href="#">Option Four</a></li>
-										</ul> 
-									</li>
-                                    --------------------------------------------->
-								</ul>
 							</li>
-							<li><a href="login.html" class="button">Sign In</a></li>
+							<li><a href="login.php" class="button">Sign In</a></li>
 						</ul>
 					</nav>
 				</header>
@@ -91,6 +77,15 @@
                           else $_SESSION['login'] = "";
                         ?>
                         
+                        <form action="login.php" method="post" enctype="multipart/form-data">
+                            <input type="text" name="username" id="username" placeholder="Username">
+                            <br>
+                            <input type="password" name="password" id="password" placeholder="Password">
+                            <br>
+                            <a href="index.html"><input type="button" value="Cancel"></a>
+                            <input type="submit" name="submit" value="Log In">
+                        </form>
+                        
                         
 						<!---------------- Contact form, unneccesary------------------------------
                         <form method="post" action="#">
@@ -127,15 +122,11 @@
 			<!-- Footer -->
 				<footer id="footer">
 					<ul class="icons">
-						<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-						<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
-						<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
-						<li><a href="#" class="icon fa-google-plus"><span class="label">Google+</span></a></li>
+						<li><a href="http://www.twitter.com/geekjosh92" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="https://github.com/lazyghoul" class="icon fa-github"><span class="label">Github</span></a></li>
 					</ul>
 					<ul class="copyright">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>&copy; Josh Simpson. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 					</ul>
 				</footer>
 

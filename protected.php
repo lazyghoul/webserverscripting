@@ -63,6 +63,8 @@
 					</header>
 					<div class="box">
                         <?php
+                            if($_SESSION['username'] != 'admin')
+                            {
                             echo "<p>You have successfully logged in!</p>";
                             echo "<p>Your username is: ";
                             echo $_SESSION['username'];
@@ -70,9 +72,11 @@
                             echo "Your password is: ";
                             echo $_SESSION['password'];
                             echo "</p>";
+                            }
                             
                             if($_SESSION['username'] == 'admin')
                             {
+                            	echo "<p>Logged into Admin account</p>";
                             	echo "<p><a href='create_user.php'>Create new user.</a></p>";
                             }
                           ?>
