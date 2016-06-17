@@ -19,7 +19,7 @@
 		<div id="page-wrapper">
 
 			<!-- Header -->
-				<header id="header" class="alt">
+				<header id="header">
 					<h1><a href="index.html">Web Scripting</a> by Josh Simpson</h1>
 					<nav id="nav">
 						<ul>
@@ -29,6 +29,7 @@
 								<ul>
                                     <li><a href="upload.html">Upload File</a></li>
                                     <li><a href="guestbook.html">Guestbook</a></li>
+                                    <li><a href="screen.html">System Data Checker</a></li>
                                     <!---Removed, used for other pages
 									<li><a href="generic.html">Generic</a></li>
 									<li><a href="contact.html">Contact</a></li>
@@ -48,7 +49,7 @@
 						<p>Please enter details for the new user.</p>
 					</header>
 					<div class="box">
-                        
+
                         <form action="insert_user.php" method="post">
                         	<input type="text" size="20" maxlength="20" name="new_username" placeholder="Username">
                         	<br>
@@ -59,7 +60,7 @@
                         	<br>
                         	</div>
                         </form>
-                        
+
 						<!---------------- Contact form, unneccesary------------------------------
                         <form method="post" action="#">
 							<div class="row uniform 50%">

@@ -21,6 +21,7 @@
 								<ul>
                                     <li><a href="upload.html">Upload File</a></li>
                                     <li><a href="guestbook.html">Guestbook</a></li>
+                                    <li><a href="screen.html">System Data Checker</a></li>
                                     <!---Removed, used for other pages
 									<li><a href="generic.html">Generic</a></li>
 									<li><a href="contact.html">Contact</a></li>
@@ -60,7 +61,7 @@
                           	$sql = "SELECT * FROM user WHERE username = '$user' AND password = '$pass'";
                           	$rs = mysql_query($sql,$conn);
                           	$result = mysql_num_rows($rs);
-                          	
+
                           	if ($result > 0) $validated = true;
                           	if($validated)
                           	{
@@ -76,7 +77,7 @@
                           }
                           else $_SESSION['login'] = "";
                         ?>
-                        
+
                         <form action="login.php" method="post" enctype="multipart/form-data">
                             <input type="text" name="username" id="username" placeholder="Username">
                             <br>
@@ -85,8 +86,8 @@
                             <a href="index.html"><input type="button" value="Cancel"></a>
                             <input type="submit" name="submit" value="Log In">
                         </form>
-                        
-                        
+
+
 						<!---------------- Contact form, unneccesary------------------------------
                         <form method="post" action="#">
 							<div class="row uniform 50%">

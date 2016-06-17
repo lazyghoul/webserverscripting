@@ -18,7 +18,7 @@
 
 			<!-- Header -->
 				<header id="header">
-				<h1><a href="index.html">Web Scripting</a> by Josh Simpson</h1>
+					<h1><a href="index.html">Web Scripting</a> by Josh Simpson</h1>
 					<nav id="nav">
 						<ul>
 							<li><a href="index.html">Home</a></li>
@@ -27,6 +27,7 @@
 								<ul>
                                     <li><a href="upload.html">Upload File</a></li>
                                     <li><a href="guestbook.html">Guestbook</a></li>
+                                    <li><a href="screen.html">System Data Checker</a></li>
                                     <!---Removed, used for other pages
 									<li><a href="generic.html">Generic</a></li>
 									<li><a href="contact.html">Contact</a></li>
@@ -48,7 +49,7 @@
 					<div class="box">
 						<span class="image featured"><img src="images/pic01.jpg" alt="" /></span>
 						<!---------------------- Add PHP for resolution checker ---------------->
-                        
+
                 <?php
                     $width = $_POST["width"];
                     $height = $_POST["height"];
@@ -65,7 +66,7 @@
                     echo "You are using a screen resolution of: $width x $height";
                   ?>
                 </h3>
-                        
+
 					</div>
 				</section>
 

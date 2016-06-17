@@ -11,7 +11,7 @@
 		<div id="page-wrapper">
 
 			<!-- Header -->
-				<header id="header" class="alt">
+				<header id="header">
 					<h1><a href="index.html">Web Scripting</a> by Josh Simpson</h1>
 					<nav id="nav">
 						<ul>
@@ -21,6 +21,7 @@
 								<ul>
                                     <li><a href="upload.html">Upload File</a></li>
                                     <li><a href="guestbook.html">Guestbook</a></li>
+                                    <li><a href="screen.html">System Data Checker</a></li>
                                     <!---Removed, used for other pages
 									<li><a href="generic.html">Generic</a></li>
 									<li><a href="contact.html">Contact</a></li>
@@ -44,7 +45,7 @@
 
                         //connect to MySQL
                         $conn = @mysql_connect ("mysql.hostinger.co.uk", "u638900915_gbook", "gbookpassword") or die ("Sorry - unable to connect to database." );
-                    
+
                         //select database
                         $rs = @mysql_select_db ( "u638900915_gbook", $conn ) or die ( "error" );
 
@@ -59,14 +60,14 @@
 
                         while ( $row = mysql_fetch_array( $rs ) )
                         {
-                            echo  ( "<tr><td>".$row["guestName"]."</td><td>".$row["msg"]."</td></tr>" );  
+                            echo  ( "<tr><td>".$row["guestName"]."</td><td>".$row["msg"]."</td></tr>" );
                         }
                         echo ( "</table>" );
 
                         ?>
                         <p>Click <a href="guestbook.html">here</a> to return to Guestbook.</p>
-                        
-                        
+
+
 						<!---------------- Contact form, unneccesary------------------------------
                         <form method="post" action="#">
 							<div class="row uniform 50%">
@@ -102,12 +103,8 @@
 			<!-- Footer -->
 				<footer id="footer">
 					<ul class="icons">
-						<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-						<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
-						<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
-						<li><a href="#" class="icon fa-google-plus"><span class="label">Google+</span></a></li>
+						<li><a href="http://twitter.com/geekjosh92" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="http://github.com/lazyghoul" class="icon fa-github"><span class="label">Github</span></a></li>
 					</ul>
 					<ul class="copyright">
 						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
