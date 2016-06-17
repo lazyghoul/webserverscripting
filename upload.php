@@ -27,6 +27,7 @@
 								<ul>
                                     <li><a href="upload.html">Upload File</a></li>
                                     <li><a href="guestbook.html">Guestbook</a></li>
+                                    <li><a href="screen.html">System Data Checker</a></li>
                                     <!---Removed, used for other pages
 									<li><a href="generic.html">Generic</a></li>
 									<li><a href="contact.html">Contact</a></li>
@@ -46,7 +47,7 @@
 						<p>Upload file to server.</p>
 					</header>
 					<div class="box">
-                        
+
                         <?php
 if (($_FILES["file"]["type"] == "image/jpeg")
     || ($_FILES["file"]["type"] == "image/png")

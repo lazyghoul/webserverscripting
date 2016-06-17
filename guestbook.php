@@ -11,7 +11,7 @@
 		<div id="page-wrapper">
 
 			<!-- Header -->
-				<header id="header" class="alt">
+				<header id="header">
 					<h1><a href="index.html">Web Scripting</a> by Josh Simpson</h1>
 					<nav id="nav">
 						<ul>
@@ -21,6 +21,7 @@
 								<ul>
                                     <li><a href="upload.html">Upload File</a></li>
                                     <li><a href="guestbook.html">Guestbook</a></li>
+                                    <li><a href="screen.html">System Data Checker</a></li>
                                     <!---Removed, used for other pages
 									<li><a href="generic.html">Generic</a></li>
 									<li><a href="contact.html">Contact</a></li>
@@ -42,7 +43,7 @@
                         <?php
                             $name = $_POST['name'];
                             $message = $_POST['message'];
-                        
+
                             //connect to MySQL
                             $conn = @mysql_connect ( "mysql.hostinger.co.uk", "u638900915_gbook", "gbookpassword")
                                 or die (mysql_error());
@@ -57,12 +58,12 @@
                             $rs = mysql_query( $sql, $conn ) or die (mysql_error());
 
                         ?>
-                        
-                        
+
+
                         <p>Message successfully saved!</p>
                         <p>Click <a href="guestbook.html">here</a> to return to Guestbook.</p>
-                        
-                        
+
+
 						<!---------------- Contact form, unneccesary------------------------------
                         <form method="post" action="#">
 							<div class="row uniform 50%">
